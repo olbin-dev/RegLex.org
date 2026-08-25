@@ -8,52 +8,16 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: {
-              dark: '#050B14',
-              panel: '#0B1528',
-              gold: '#C5A880',
-              blue: '#1E3A8A',
-              copper: '#B45309',
-            }
-          },
-          fontFamily: {
-            sans: ['Noto Sans JP', 'Figtree', 'sans-serif'],
-          }
-        }
-      }
-    }
-  </script>
-  <style type="text/css">
-    html {
-      scroll-behavior: smooth;
-    }
-    .reveal-on-scroll {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-    .reveal-on-scroll.revealed {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  <script type="module" src="/src/main.js"></script>
 </head>
-<body class="bg-[#050B14] text-gray-200 antialiased font-sans">
+<body class="bg-[#050B14] text-gray-200 antialiased font-['Noto_Sans_JP',sans-serif]">
 
   <!-- Header -->
   <header class="sticky top-0 z-50 bg-[#050B14]/80 backdrop-blur-md border-b border-gray-800">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       <div class="flex items-center space-x-3">
         <div class="w-8 h-8 rounded bg-gradient-to-tr from-[#C5A880] to-[#E5C8A0] flex items-center justify-center font-bold text-black text-lg">L</div>
-        <span class="text-xl font-bold tracking-wider text-white font-serif">LogosCyber</span>
+        <span class="text-xl font-bold tracking-wider text-white font-['Figtree']">LogosCyber</span>
         <span class="text-xs text-gray-400 bg-gray-800 px-2 py-0.5 rounded font-mono border border-gray-700">Audit & Legal</span>
       </div>
       <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-gray-300">
@@ -76,7 +40,7 @@
     <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,#C5A880/5,_transparent_40%)]" aria-hidden="true"></div>
     <div class="max-w-7xl mx-auto px-6 relative z-10">
       <div class="text-center max-w-4xl mx-auto">
-        <span class="inline-flex items-center px-3 py-1 rounded-full text-[10px] font-semibold bg-[#C5A880]/10 text-[#C5A880] border border-[#C5A880]/20 uppercase tracking-widest mb-6">
+        <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-[#C5A880]/10 text-[#C5A880] border border-[#C5A880]/20 uppercase tracking-widest font-['Figtree'] mb-6">
           ENTERPRISE ARCHITECTURE & COMPLIANCE
         </span>
         <h1 class="text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight">
@@ -85,7 +49,7 @@
         <p class="mt-6 text-xl md:text-2xl text-gray-300 font-light leading-relaxed">
           監査法人・法律事務所向け 自律型<span class="text-[#FF1E1E] font-bold">AI</span>によるITGC・サイバーセキュリティ監査（外部検証領域）の継続検証 ＆ サイバー・デューデリジェンス/フォレンジック基盤
         </p>
-        <p class="mt-4 text-sm md:text-base text-gray-400 font-mono tracking-wide">
+        <p class="mt-4 text-base md:text-lg text-gray-400 font-mono tracking-wide">
           〜 M&Aにおける「サイバー簿外債務の可視化」と「善管注意義務をサポートする一次技術証跡の自動保全」 〜
         </p>
       </div>
@@ -94,19 +58,19 @@
       <div class="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
         <div class="bg-[#0B1528] border border-gray-800 rounded-xl p-8 relative overflow-hidden group hover:border-[#C5A880]/30 transition-all">
           <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#C5A880]/10 to-transparent rounded-bl-full"></div>
-          <p class="text-xs font-semibold tracking-wider text-gray-400 uppercase">対象母集団に対する検証</p>
-          <p class="text-5xl font-bold text-white mt-4 font-mono">100%</p>
+          <p class="text-sm font-semibold tracking-wider text-gray-400 uppercase">対象母集団に対する検証</p>
+          <p class="text-5xl font-bold text-white mt-4 font-['Figtree']">100%</p>
           <p class="text-sm text-gray-400 mt-4 leading-relaxed">特定された検査対象母集団に対し、サンプリング監査から全量自動検証へのシフトを実現します。</p>
         </div>
         <div class="bg-[#0B1528] border border-gray-800 rounded-xl p-8 relative overflow-hidden group hover:border-[#C5A880]/30 transition-all">
           <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#C5A880]/10 to-transparent rounded-bl-full"></div>
-          <p class="text-xs font-semibold tracking-wider text-gray-400 uppercase">付加価値（新規収益）</p>
+          <p class="text-sm font-semibold tracking-wider text-gray-400 uppercase">付加価値（新規収益）</p>
           <p class="text-4xl font-bold text-[#C5A880] mt-5">プレミアムDD</p>
           <p class="text-sm text-gray-400 mt-4 leading-relaxed">M&A実行時に高度なサイバー脆弱性・漏洩リスク調査を提供可能にします。</p>
         </div>
         <div class="bg-[#0B1528] border border-gray-800 rounded-xl p-8 relative overflow-hidden group hover:border-[#C5A880]/30 transition-all">
           <div class="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-[#C5A880]/10 to-transparent rounded-bl-full"></div>
-          <p class="text-xs font-semibold tracking-wider text-gray-400 uppercase">検証可能な一次技術証跡</p>
+          <p class="text-sm font-semibold tracking-wider text-gray-400 uppercase">検証可能な一次技術証跡</p>
           <p class="text-3xl font-bold text-white mt-6">一次技術証跡の自動保全</p>
           <p class="text-sm text-gray-400 mt-4 leading-relaxed">取得後の完全性を暗号学的に検証可能な生通信ログにより、善管注意義務の法務レビューに利用可能な客観的データを蓄積します。</p>
         </div>
@@ -115,7 +79,7 @@
   </section>
 
   <!-- Section 1: Challenges -->
-  <section id="challenges" class="py-24 border-b border-gray-900 bg-[#050B14] reveal-on-scroll">
+  <section id="challenges" class="py-24 border-b border-gray-900 bg-[#050B14]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-semibold tracking-widest text-[#C5A880] uppercase">INDUSTRY CHALLENGES</span>
@@ -170,7 +134,7 @@
   </section>
 
   <!-- Section 2: Mechanism / Paradigm Shift -->
-  <section id="mechanism" class="py-24 border-b border-gray-900 bg-[#0B1528] reveal-on-scroll">
+  <section id="mechanism" class="py-24 border-b border-gray-900 bg-[#0B1528]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-semibold tracking-widest text-[#C5A880] uppercase">AUDIT MECHANISM</span>
@@ -186,13 +150,13 @@
           
           <div class="space-y-4">
             <div class="border-l-2 border-red-500 pl-4 py-1">
-              <span class="text-[10px] text-red-400 font-bold uppercase tracking-wider block">従来モデル</span>
+              <span class="text-xs text-red-400 font-bold uppercase tracking-wider block">従来モデル</span>
               <span class="text-white font-bold block">年1回 ITGC監査（364日間の暗黒期間）</span>
               <p class="text-sm text-gray-400 mt-1">期末監査のヒアリングでAPI仕様変更やクラウド設定ミスを長期間放置した状態で見逃すリスク。</p>
             </div>
             
             <div class="border-l-2 border-green-500 pl-4 py-1">
-              <span class="text-[10px] text-green-400 font-bold uppercase tracking-wider block">LogosCyberモデル</span>
+              <span class="text-xs text-green-400 font-bold uppercase tracking-wider block">LogosCyberモデル</span>
               <span class="text-white font-bold block">月次継続監査（30日サイクルの全量証跡収集）</span>
               <p class="text-sm text-gray-400 mt-1">統制の逸脱や野良クラウドを「最長30日」で検知・証拠保全し、空白期間を排除します。</p>
             </div>
@@ -201,7 +165,7 @@
 
         <!-- Interactive visual for timeline -->
         <div class="p-6 bg-[#050B14] rounded-xl border border-gray-800">
-          <h4 class="text-xs font-semibold text-gray-400 mb-6 font-mono">TIMELINE COMPARISON</h4>
+          <h4 class="text-sm font-semibold text-gray-400 mb-6 font-mono">TIMELINE COMPARISON</h4>
           
           <!-- Traditional Line -->
           <div class="relative pb-10">
@@ -212,7 +176,7 @@
                 <span class="text-[10px] text-gray-400 block mt-2">期末監査 (1月)</span>
               </div>
               <div class="text-center pt-2">
-                <div class="text-[10px] text-red-500 bg-red-950/40 px-2 py-0.5 rounded border border-red-900 inline-block">⚠ 脆弱性設定ミス放置 (暗黒期間 364日)</div>
+                <div class="text-[11px] text-red-500 bg-red-950/40 px-2 py-0.5 rounded border border-red-900 inline-block">⚠ 脆弱性設定ミス放置 (暗黒期間 364日)</div>
               </div>
               <div class="text-center">
                 <div class="w-4 h-4 rounded-full bg-red-500 mx-auto border-2 border-[#050B14]"></div>
@@ -258,6 +222,7 @@
                 <div class="w-3 h-3 rounded-full bg-[#C5A880] mx-auto border border-[#050B14]"></div>
                 <span class="text-[9px] text-gray-500 block mt-2">8月</span>
               </div>
+              <!-- simplify other months -->
               <div class="text-center">
                 <div class="w-3 h-3 rounded-full bg-[#C5A880] mx-auto border border-[#050B14]"></div>
                 <span class="text-[9px] text-gray-500 block mt-2">12月</span>
@@ -274,7 +239,7 @@
   </section>
 
   <!-- Section 3: Next Generation Model -->
-  <section class="py-24 border-b border-gray-900 bg-[#050B14] reveal-on-scroll">
+  <section class="py-24 border-b border-gray-900 bg-[#050B14]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-semibold tracking-widest text-[#C5A880] uppercase">VALUE CREATION CYCLE</span>
@@ -285,7 +250,7 @@
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
         <!-- Step 1 -->
         <div class="bg-[#0B1528] border border-gray-800 rounded-lg p-6 relative">
-          <span class="text-5xl font-extrabold text-gray-800/20 absolute top-4 right-4">01</span>
+          <span class="text-5xl font-extrabold text-gray-800 absolute top-4 right-4">01</span>
           <h4 class="text-lg font-bold text-white mt-4">継続的・全量リスク抽出</h4>
           <p class="text-gray-400 text-sm mt-3 leading-relaxed">
             監査対象企業のすべてのインターネット公開ドメインとAPI脆弱性を、<span class="text-[#FF1E1E] font-bold">AI</span>が毎月自動で抽出し可視化。
@@ -293,7 +258,7 @@
         </div>
         <!-- Step 2 -->
         <div class="bg-[#0B1528] border border-gray-800 rounded-lg p-6 relative">
-          <span class="text-5xl font-extrabold text-gray-800/20 absolute top-4 right-4">02</span>
+          <span class="text-5xl font-extrabold text-gray-800 absolute top-4 right-4">02</span>
           <h4 class="text-lg font-bold text-white mt-4">コンプライアンス是正勧告</h4>
           <p class="text-gray-400 text-sm mt-3 leading-relaxed">
             スキャンで得られた客観的データに基づき、クライアントへ具体的な是正を正確に指導。
@@ -301,7 +266,7 @@
         </div>
         <!-- Step 3 -->
         <div class="bg-[#0B1528] border border-gray-800 rounded-lg p-6 relative">
-          <span class="text-5xl font-extrabold text-gray-800/20 absolute top-4 right-4">03</span>
+          <span class="text-5xl font-extrabold text-gray-800 absolute top-4 right-4">03</span>
           <h4 class="text-lg font-bold text-[#C5A880] mt-4">法的証拠の自動保全</h4>
           <p class="text-gray-400 text-sm mt-3 leading-relaxed">
             <span class="text-[#FF1E1E] font-bold">AI</span>の検証プロセス、スキャン設計、および実際の生通信パケット（request / response / timestamp / hash等）を、取得後の完全性を暗号学的に検証可能な「一次技術証跡」として蓄積。
@@ -309,7 +274,7 @@
         </div>
         <!-- Step 4 -->
         <div class="bg-[#0B1528] border border-gray-800 rounded-lg p-6 relative">
-          <span class="text-5xl font-extrabold text-gray-800/20 absolute top-4 right-4">04</span>
+          <span class="text-5xl font-extrabold text-gray-800 absolute top-4 right-4">04</span>
           <h4 class="text-lg font-bold text-white mt-4">監査品質向上・プレミアムDD</h4>
           <p class="text-gray-400 text-sm mt-3 leading-relaxed">
             人的リソースの制約を超え、プロフェッショナルによる高付加価値なアドバイザリー業務を提供可能に。
@@ -320,7 +285,7 @@
   </section>
 
   <!-- Section 4: ROI / Comparison -->
-  <section id="roi" class="py-24 border-b border-gray-900 bg-[#0B1528] reveal-on-scroll">
+  <section id="roi" class="py-24 border-b border-gray-900 bg-[#0B1528]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-semibold tracking-widest text-[#C5A880] uppercase">FINANCIAL ROI</span>
@@ -332,17 +297,17 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
         <div class="bg-[#050B14] p-8 rounded-lg border border-gray-800 text-center">
           <p class="text-gray-400 text-sm font-semibold">IT監査工数の大幅削減</p>
-          <p class="text-5xl font-bold text-[#C5A880] mt-4 font-mono">70%減</p>
+          <p class="text-5xl font-bold text-[#C5A880] mt-4">70%減</p>
           <p class="text-xs text-gray-400 mt-3">手作業による証拠収集を自動化し、専門家不在でも均質な監査を実現</p>
         </div>
         <div class="bg-[#050B14] p-8 rounded-lg border border-gray-800 text-center">
           <p class="text-gray-400 text-sm font-semibold">プレミアムDDの新規収益</p>
-          <p class="text-5xl font-bold text-white mt-4 font-mono">数百万円<span class="text-lg font-normal"> / 件</span></p>
+          <p class="text-5xl font-bold text-white mt-4">数百万円<span class="text-lg font-normal"> / 件</span></p>
           <p class="text-xs text-gray-400 mt-3">M&A時のサイバー簿外債務調査を外部委託せず自社内で完結し利益化</p>
         </div>
         <div class="bg-[#050B14] p-8 rounded-lg border border-gray-800 text-center">
           <p class="text-gray-400 text-sm font-semibold">有事対応・訴訟時の強み</p>
-          <p class="text-5xl font-bold text-white mt-4">証跡の確保</p>
+          <p class="text-5xl font-bold text-white mt-4">圧倒的確保</p>
           <p class="text-xs text-gray-400 mt-3">フォレンジック費用の内製化と、迅速な対応による損害の極小化</p>
         </div>
       </div>
@@ -360,24 +325,24 @@
           <tbody class="divide-y divide-gray-800">
             <tr>
               <td class="px-6 py-4 font-bold text-white">① IT全般統制監査の技術的検証支援</td>
-              <td class="px-6 py-4 text-gray-400 text-sm leading-relaxed">専門家不足によりサンプリング評価に依存。確認工数が膨大で利益率を圧迫。</td>
-              <td class="px-6 py-4 text-gray-200 text-sm bg-[#C5A880]/5 leading-relaxed">
+              <td class="px-6 py-4 text-gray-400 text-sm">専門家不足によりサンプリング評価に依存。確認工数が膨大で利益率を圧迫。</td>
+              <td class="px-6 py-4 text-gray-200 text-sm bg-[#C5A880]/5">
                 <strong>ITGC監査のうち外部から技術的に検証可能な領域の検証工数を大幅削減し、特定された検査対象母集団に対する100%自動検証を実現。</strong><br>
                 月次バッチによる継続的検証で、監査人による評価調書作成を強力に支援。
               </td>
             </tr>
             <tr>
               <td class="px-6 py-4 font-bold text-white">② M&A サイバーDDの内製化</td>
-              <td class="px-6 py-4 text-gray-400 text-sm leading-relaxed">外部のセキュリティベンダーへ外注。追加の外注費発生とスケジュール遅延が発生。</td>
-              <td class="px-6 py-4 text-gray-200 text-sm bg-[#C5A880]/5 leading-relaxed">
+              <td class="px-6 py-4 text-gray-400 text-sm">外部のセキュリティベンダーへ外注。追加の外注費発生とスケジュール遅延が発生。</td>
+              <td class="px-6 py-4 text-gray-200 text-sm bg-[#C5A880]/5">
                 <strong>ファーム単独で高単価なサイバーDDを提供可能。</strong><br>
                 対象企業のドメインを入力するだけで即日調査完了、自社の利益に。
               </td>
             </tr>
             <tr>
               <td class="px-6 py-4 font-bold text-white">③ 有事のフォレンジック・立証</td>
-              <td class="px-6 py-4 text-gray-400 text-sm leading-relaxed">事後的なログ収集に数週間と高額な外部費用が発生。善管注意義務の立証が極めて困難。</td>
-              <td class="px-6 py-4 text-gray-200 text-sm bg-[#C5A880]/5 leading-relaxed">
+              <td class="px-6 py-4 text-gray-400 text-sm">事後的なログ収集に数週間と高額な外部費用が発生。善管注意義務の立証が極めて困難。</td>
+              <td class="px-6 py-4 text-gray-200 text-sm bg-[#C5A880]/5">
                 <strong>日常からの証跡収集により即日方針決定。</strong><br>
                 取得後の完全性を暗号学的に検証可能な生通信ログ（request / response / timestamp / hash等）を保持し、監査・法務レビューに利用可能な一次技術証跡を確保。
               </td>
@@ -389,7 +354,7 @@
   </section>
 
   <!-- Section 5: Use Cases -->
-  <section class="py-24 border-b border-gray-900 bg-[#050B14] reveal-on-scroll">
+  <section class="py-24 border-b border-gray-900 bg-[#050B14]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-semibold tracking-widest text-[#C5A880] uppercase">BUSINESS USE CASES</span>
@@ -435,7 +400,7 @@
   </section>
 
   <!-- Section 6: Evidence / Raw Log Sample -->
-  <section class="py-24 border-b border-gray-900 bg-[#0B1528] reveal-on-scroll">
+  <section class="py-24 border-b border-gray-900 bg-[#0B1528]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-semibold tracking-widest text-[#C5A880] uppercase">AUDIT-GRADE LOGS</span>
@@ -484,11 +449,11 @@
             
             <div class="bg-gray-900/60 p-4 rounded border border-gray-800 my-4">
               <div class="text-gray-500 border-b border-gray-800 pb-2 mb-2 uppercase text-[10px] tracking-wider font-bold">RAW_HTTP_EVIDENCE_保全 (Primary Technical Evidence)</div>
-              <div class="text-green-400 font-bold">HTTP/1.1 200 OK</div>
+              <div class="text-green-400">HTTP/1.1 200 OK</div>
               <div class="text-gray-400">Date: 2026-08-24 07:50:00 JST</div>
               <div class="text-gray-400">Content-Type: application/json</div>
               <div class="text-gray-400">Connection: keep-alive</div>
-              <div class="text-gray-300 mt-2 overflow-x-auto whitespace-pre font-mono">{"data":{"__schema":{"types":[{"name":"UserAccount"},{"name":"PaymentProfile"},...]}}}</div>
+              <div class="text-gray-300 mt-2 overflow-x-auto whitespace-pre">{"data":{"__schema":{"types":[{"name":"UserAccount"},{"name":"PaymentProfile"},...]}}}</div>
             </div>
 
             <div>
@@ -507,7 +472,7 @@
   </section>
 
   <!-- Section 7: Compliance Alignment -->
-  <section class="py-24 border-b border-gray-900 bg-[#050B14] reveal-on-scroll">
+  <section class="py-24 border-b border-gray-900 bg-[#050B14]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-semibold tracking-widest text-[#C5A880] uppercase">COMPLIANCE ALIGNMENT</span>
@@ -536,7 +501,7 @@
   </section>
 
   <!-- Section 8: Architecture -->
-  <section id="architecture" class="py-24 border-b border-gray-900 bg-[#0B1528] reveal-on-scroll">
+  <section id="architecture" class="py-24 border-b border-gray-900 bg-[#0B1528]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-semibold tracking-widest text-[#C5A880] uppercase">SYSTEM ARCHITECTURE & OPSEC</span>
@@ -581,7 +546,7 @@
   </section>
 
   <!-- Section 9: Pricing & Roadmap -->
-  <section id="pricing" class="py-24 border-b border-gray-900 bg-[#050B14] reveal-on-scroll">
+  <section id="pricing" class="py-24 border-b border-gray-900 bg-[#050B14]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-semibold tracking-widest text-[#C5A880] uppercase">ENTERPRISE PRICING & LICENSING</span>
@@ -610,7 +575,7 @@
 
         <!-- Plan 2 (Featured) -->
         <div class="bg-[#0B1528] border-2 border-[#C5A880] rounded-lg p-8 relative flex flex-col justify-between shadow-xl">
-          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#C5A880] text-black text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#C5A880] text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">
             RECOMMENDED (最上位)
           </div>
           <div>
@@ -668,7 +633,7 @@
   </section>
 
   <!-- Section 10: FAQ -->
-  <section class="py-24 border-b border-gray-900 bg-[#0B1528] reveal-on-scroll">
+  <section class="py-24 border-b border-gray-900 bg-[#0B1528]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="text-center max-w-3xl mx-auto mb-16">
         <span class="text-xs font-semibold tracking-widest text-[#C5A880] uppercase">FAQ</span>
@@ -714,7 +679,7 @@
   </section>
 
   <!-- Section 11: Contact / Application -->
-  <section id="contact" class="py-24 bg-[#050B14] reveal-on-scroll">
+  <section id="contact" class="py-24 bg-[#050B14]">
     <div class="max-w-7xl mx-auto px-6">
       <div class="max-w-4xl mx-auto bg-gradient-to-br from-[#0B1528] to-gray-950 rounded-2xl border border-gray-800 p-8 md:p-12 relative overflow-hidden">
         <div class="absolute top-0 right-0 w-64 h-64 bg-[#C5A880]/5 rounded-full blur-3xl" aria-hidden="true"></div>
@@ -727,8 +692,8 @@
           </p>
 
           <div class="mt-8 flex flex-col sm:flex-row justify-center gap-4">
-            <a href="mailto:hello@reglex.org" class="px-8 py-4 bg-gradient-to-r from-[#C5A880] to-[#E5C8A0] text-black font-bold rounded hover:opacity-90 transition-opacity">
-              メールでデモを申し込む (hello@reglex.org)
+            <a href="mailto:logoscyber@reglex.org" class="px-8 py-4 bg-gradient-to-r from-[#C5A880] to-[#E5C8A0] text-black font-bold rounded hover:opacity-90 transition-opacity">
+              メールでデモを申し込む (logoscyber@reglex.org)
             </a>
           </div>
 
@@ -763,8 +728,8 @@
   <footer class="bg-gray-950 py-12 border-t border-gray-900">
     <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
       <div class="flex items-center space-x-3">
-        <div class="w-6 h-6 rounded bg-[#C5A880] flex items-center justify-center font-bold text-black text-xs">L</div>
-        <span class="text-base font-bold tracking-wider text-white">LogosCyber Project</span>
+        <div class="w-6 h-6 rounded bg-[#C5A880] flex items-center justify-center font-bold text-black text-xs font-['Figtree']">L</div>
+        <span class="text-base font-bold tracking-wider text-white font-['Figtree']">LogosCyber Project</span>
       </div>
       <p class="text-xs text-gray-500 font-mono">
         Autonomous AI Cyber Auditing & Legal Forensics Architecture
@@ -775,64 +740,5 @@
     </div>
   </footer>
 
-  <!-- Interactive JavaScript -->
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // 1. FAQアコーディオンの制御
-      const faqItems = document.querySelectorAll('.faq-item');
-      faqItems.forEach(item => {
-        const button = item.querySelector('.faq-trigger');
-        const answer = item.querySelector('.faq-answer');
-        const icon = item.querySelector('.faq-icon');
-        
-        if (button && answer && icon) {
-          button.addEventListener('click', () => {
-            const isOpen = item.classList.contains('open');
-            
-            // 全て閉じる
-            faqItems.forEach(i => {
-              i.classList.remove('open');
-              i.querySelector('.faq-answer').classList.add('hidden');
-              const iIcon = i.querySelector('.faq-icon');
-              if (iIcon) iIcon.style.transform = 'rotate(0deg)';
-            });
-            
-            if (!isOpen) {
-              item.classList.add('open');
-              answer.classList.remove('hidden');
-              icon.style.transform = 'rotate(180deg)';
-            }
-          });
-        }
-      });
-
-      // 2. スクロール時のアニメーション (Fade-in / Reveal)
-      const revealElements = document.querySelectorAll('.reveal-on-scroll');
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('revealed');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.15 });
-
-      revealElements.forEach(el => {
-        observer.observe(el);
-      });
-
-      // 3. テストPoCのインタラクション（ダミー入力や簡易計算ツール）
-      const pocInput = document.getElementById('poc-deal-count');
-      const pocResult = document.getElementById('poc-calc-result');
-      if (pocInput && pocResult) {
-        pocInput.addEventListener('input', (e) => {
-          const deals = parseInt(e.target.value) || 0;
-          // 1件あたり平均300万円のプレミアムDD売上として試算
-          const revenue = deals * 300;
-          pocResult.textContent = `¥${revenue.toLocaleString()}万円 / 年 (新規売上予測)`;
-        });
-      }
-    });
-  </script>
 </body>
 </html>
